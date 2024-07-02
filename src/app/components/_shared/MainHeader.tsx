@@ -9,7 +9,7 @@ type Props = {};
 
 const MainHeader = (props: Props) => {
   return (
-    <header className="bg-secondary">
+    <header className="bg-primary text-white">
       <Container className="mx-auto h-100 py-2">
         <div className="flex min-h-[50px] justify-between items-center h-100">
           {/* Brand Logo */}
@@ -28,7 +28,7 @@ const MainHeader = (props: Props) => {
               className="flex items-start gap-2 pr-4 sm:border-r-2 border-black"
             >
               <div className="gmail-logo pt-1">
-                <CiMail color="red" className="h-4 md:h-8 w-auto" />
+                <CiMail className="h-4 md:h-8 w-auto text-secondary" />
               </div>
               <div className="flex flex-col">
                 <Link
@@ -43,7 +43,7 @@ const MainHeader = (props: Props) => {
 
             <div id="phone" className="flex items-start gap-2 border-black">
               <div className="gmail-logo pt-1">
-                <FaPhoneAlt color="red" className="h-4 md:h-6 w-auto" />
+                <FaPhoneAlt className="h-4 md:h-6 w-auto text-secondary" />
               </div>
               <div className="flex flex-col">
                 <Link href={"tel:919876543212"} className="email font-bold">

@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
 type Props = {
-  children: ReactElement | ReactElement[];
+  children?: ReactElement | ReactElement[] | string;
   className?: string;
 };
 

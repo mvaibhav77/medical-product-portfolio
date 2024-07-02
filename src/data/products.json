@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "description": "lorem ipsum dolor sit amet",
+    "therapyArea": "Vitamins and Supplements",
+    "price": 100,
+    "image": "/assets/apples.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "description": "lorem ipsum dolor sit amet",
+    "therapyArea": "Physical Health",
+    "price": 200,
+    "image": "/assets/apples.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "description": "lorem ipsum dolor sit amet",
+    "therapyArea": "Vitamins and Supplements",
+    "price": 300,
+    "image": "/assets/apples.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "description": "lorem ipsum dolor sit amet",
+    "therapyArea": "Vitamins and Supplements",
+    "price": 400,
+    "image": "/assets/apples.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "description": "lorem ipsum dolor sit amet",
+    "therapyArea": "Vitamins and Supplements",
+    "price": 500,
+    "image": "/assets/apples.jpg"
+  }
+]
