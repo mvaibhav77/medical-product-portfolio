@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
   };
 
   return (
-    <nav className="w-100 my-2 py-2">
+    <nav className="w-100 my-2 py-1">
       <Container className="flex justify-between items-center">
         {/* big menu */}
         <div className="main-nav lg:block hidden">
