@@ -1,7 +1,7 @@
 import React from "react";
-import PageHeader from "../components/_shared/PageHeader";
+import PageHeader from "../components/PageHeader";
 import aboutImage from "../../assets/about-us.jpg";
-import Container from "../components/_shared/Container";
+import Container from "../components/Container";
 import Image from "next/image";
 import Mission from "../../assets/mission.jpg";
 import Teamwork from "../../assets/teamwork.jpg";
@@ -14,7 +14,7 @@ const page = (props: Props) => {
       <PageHeader title="About Us" image={aboutImage} />
       {/* section 1 */}
       <section id="about-main" className="py-8">
-        <Container className="flex lg:flex-row flex-col-reverse gap-6 justify-center lg:items-start items-center lg:px-0 px-4">
+        <Container className="flex lg:flex-row lg:px-4 px-2 flex-col-reverse gap-6 justify-center lg:items-start items-center lg:px-0 px-4">
           {/* section deatils */}
           <div className="section-details lg:w-3/5 w-full">
             <div className="section-header">
@@ -113,7 +113,6 @@ const page = (props: Props) => {
       </section>
 
       {/* more if needed */}
-
     </main>
   );
 };

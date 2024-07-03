@@ -5,7 +5,14 @@
     "description": "lorem ipsum dolor sit amet",
     "therapyArea": "Vitamins and Supplements",
     "price": 100,
-    "image": "/assets/apples.jpg"
+    "image": "/assets/apples.jpg",
+    "images": [
+      "/assets/apples.jpg",
+      "/assets/apples.jpg",
+      "/assets/apples.jpg"
+    ],
+    "catalogue": "/",
+    "slug": "product-1"
   },
   {
     "id": 2,
@@ -13,7 +20,14 @@
     "description": "lorem ipsum dolor sit amet",
     "therapyArea": "Physical Health",
     "price": 200,
-    "image": "/assets/apples.jpg"
+    "image": "/assets/apples.jpg",
+    "images": [
+      "/assets/apples.jpg",
+      "/assets/apples.jpg",
+      "/assets/apples.jpg"
+    ],
+    "catalogue": "/",
+    "slug": "product-2"
   },
   {
     "id": 3,
@@ -21,15 +35,29 @@
     "description": "lorem ipsum dolor sit amet",
     "therapyArea": "Vitamins and Supplements",
     "price": 300,
-    "image": "/assets/apples.jpg"
+    "image": "/assets/apples.jpg",
+    "images": [
+      "/assets/apples.jpg",
+      "/assets/apples.jpg",
+      "/assets/apples.jpg"
+    ],
+    "catalogue": "/",
+    "slug": "product-3"
   },
   {
     "id": 4,
     "name": "Product 4",
-    "description": "lorem ipsum dolor sit amet",
+    "description": "lorem ipsum dolor sit amet.",
     "therapyArea": "Vitamins and Supplements",
     "price": 400,
-    "image": "/assets/apples.jpg"
+    "image": "/assets/apples.jpg",
+    "images": [
+      "/assets/apples.jpg",
+      "/assets/apples.jpg",
+      "/assets/apples.jpg"
+    ],
+    "catalogue": "/",
+    "slug": "product-4"
   },
   {
     "id": 5,
@@ -37,6 +65,13 @@
     "description": "lorem ipsum dolor sit amet",
     "therapyArea": "Vitamins and Supplements",
     "price": 500,
-    "image": "/assets/apples.jpg"
+    "image": "/assets/apples.jpg",
+    "images": [
+      "/assets/apples.jpg",
+      "/assets/apples.jpg",
+      "/assets/apples.jpg"
+    ],
+    "catalogue": "/",
+    "slug": "product-5"
   }
 ]

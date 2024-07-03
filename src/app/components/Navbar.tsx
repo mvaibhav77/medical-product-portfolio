@@ -17,23 +17,23 @@ const Navbar = (props: Props) => {
   };
 
   return (
-    <nav className="w-100 my-2 py-1">
+    <nav className="w-100 py-2 bg-secondary">
       <Container className="flex justify-between items-center">
         {/* big menu */}
         <div className="main-nav lg:block hidden">
           <ul className="flex gap-10 text-[16px] font-semibold">
             <li>
-              <Link href="products" className="hover:underline">
+              <Link href="/products" className="hover:underline">
                 Products
               </Link>
             </li>
             <li>
-              <Link href={"about"} className="hover:underline">
+              <Link href={"/about"} className="hover:underline">
                 About us
               </Link>
             </li>
             <li>
-              <Link href={"about"} className="hover:underline">
+              <Link href={"/contact"} className="hover:underline">
                 Contact Us
               </Link>
             </li>
@@ -111,24 +111,36 @@ const Navbar = (props: Props) => {
 
             {/* side-menu nav */}
             <ul className="side-menu-nav flex flex-col w-full">
-              <li className="hover:bg-secondary p-4 flex items-center justify-between">
-                <Link href="products" className="text-lg">
+              <Link
+                href="/products"
+                className="text-lg"
+                onClick={() => setShowMenu(false)}
+              >
+                <li className="hover:bg-secondary p-4 flex items-center justify-between">
                   Products
-                </Link>
-                <GoArrowUpRight size={30} />
-              </li>
-              <li className="hover:bg-secondary p-4 flex items-center justify-between">
-                <Link href={"about"} className="text-lg">
+                  <GoArrowUpRight size={30} />
+                </li>
+              </Link>
+              <Link
+                href={"/about"}
+                className="text-lg"
+                onClick={() => setShowMenu(false)}
+              >
+                <li className="hover:bg-secondary p-4 flex items-center justify-between">
                   About us
-                </Link>
-                <GoArrowUpRight size={30} />
-              </li>
-              <li className="hover:bg-secondary p-4 flex items-center justify-between">
-                <Link href={"about"} className="text-lg">
+                  <GoArrowUpRight size={30} />
+                </li>
+              </Link>
+              <Link
+                href={"/about"}
+                className="text-lg"
+                onClick={() => setShowMenu(false)}
+              >
+                <li className="hover:bg-secondary p-4 flex items-center justify-between">
                   Contact Us
-                </Link>
-                <GoArrowUpRight size={30} />
-              </li>
+                  <GoArrowUpRight size={30} />
+                </li>
+              </Link>
             </ul>
           </div>
         </>

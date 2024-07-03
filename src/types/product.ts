@@ -5,4 +5,7 @@ export interface Product {
   therapyArea: string;
   price: number;
   image: string;
+  images: string[];
+  catalogue: string;
+  slug: string;
 }

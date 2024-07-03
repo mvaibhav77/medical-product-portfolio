@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Container from "./Container";
 
 type Props = {
   title: string;
@@ -23,20 +24,18 @@ const PageHeader = (props: Props) => {
       {/* overlay */}
       <div className="overlay absolute top-0 left-0 h-full w-full bg-black opacity-45"></div>
 
-      <div className="header-title lg:left-[10%] absolute top-1/2 left-0 px-6 -translate-y-1/2 mx-auto lg:w-5/6 w-full">
+      <Container className="header-title absolute top-1/2 px-6 -translate-y-1/2 left-1/2 -translate-x-1/2">
         {/* Page */}
         <h2 className="md:text-4xl text-2xl font-bolf text-white">
           {props.title}
         </h2>
 
         {/* breadcrumbs */}
-        <div className="breadcrumbs md:block hidden mt-4">
-          <Link href="/" className="text-gray-400">
-            Home
-          </Link>{" "}
-          / <span className="text-white">{props.title}</span>
+        <div className="breadcrumbs md:block hidden mt-4 text-gray-400">
+          <Link href="/">Home</Link> /{" "}
+          <span className="text-white">{props.title}</span>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

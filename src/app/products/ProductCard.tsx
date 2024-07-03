@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Product } from "@/types/product";
+import Link from "next/link";
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
@@ -21,9 +22,11 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
         </div>
 
         {/* View Deatils button */}
-        <button className="btn px-4 py-2 text-primary border-[1px] border-primary rounded-lg hover:bg-primary hover:text-white hover:border-white">
-          View Details
-        </button>
+        <Link href={`/products/${product.slug}`}>
+          <button className="btn px-4 py-2 text-primary border-[1px] border-primary rounded-lg hover:bg-primary hover:text-white hover:border-white">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );

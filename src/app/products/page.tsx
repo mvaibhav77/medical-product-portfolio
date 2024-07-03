@@ -1,18 +1,20 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import PageHeader from "../components/_shared/PageHeader";
+import PageHeader from "../components/PageHeader";
 // import Medicine from "../../assets/medicine.jpg";
 import Products from "../../assets/products.jpg";
 import { Product } from "@/types/product";
 import products from "../../data/products.json";
-import SearchFilter from "../components/product/SearchFilter";
+import SearchFilter from "./SearchFilter";
 import ProductCard from "./ProductCard";
-import Container from "../components/_shared/Container";
+import Container from "../components/Container";
 
 const Page = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
+    ""
+  );
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
   const [currentItems, setCurrentItems] = useState(6);
@@ -52,6 +54,7 @@ const Page = () => {
   // Call handleFilter on initial render and whenever searchTerm or selectedCategory changes
   useEffect(() => {
     handleFilter();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm, selectedCategory]);
 
   return (
