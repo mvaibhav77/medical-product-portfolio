@@ -2,7 +2,7 @@
 
 import { ThemeProvider, Carousel } from "@material-tailwind/react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { Product } from "@/types/product";
 import {
   TransformWrapper,

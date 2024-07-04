@@ -1,7 +1,7 @@
 import React from "react";
 import products from "../../../data/products.json";
 import { Product } from "@/types/product";
-import Container from "@/app/components/Container";
+import Container from "@/components/Container";
 import PhotoCarousel from "./PhotoCarousel";
 import Accordian from "./Accordian";
 import Link from "next/link";
@@ -27,8 +27,8 @@ const page = ({ params }: Props) => {
       {/* breadcrumbs */}
       <section>
         <hr className=" border-black" />
-        <Container>
-          <nav className="text-black py-2">
+        <Container className="md:px-0 px-4">
+          <nav className="text-black md:text-base text-sm py-2">
             <a href="/" className="hover:underline text-gray-700">
               Home
             </a>{" "}
@@ -43,7 +43,7 @@ const page = ({ params }: Props) => {
       </section>
 
       {/* main section in grid of 2 columns */}
-      <section className="py-4 mb-20">
+      <section className="py-4 md:px-0 px-3 mb-20">
         <Container>
           {/* header */}
           <div className="product-header mb-4">

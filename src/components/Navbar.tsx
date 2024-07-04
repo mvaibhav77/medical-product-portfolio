@@ -6,9 +6,11 @@ import { IoMenu } from "react-icons/io5";
 import Container from "./Container";
 import { RxCross2 } from "react-icons/rx";
 import { GoArrowUpRight } from "react-icons/go";
-import Data from "../../data/products.json";
+import Data from "../data/products.json";
 import { Product } from "@/types/product";
 import { Card, List, ListItem, ThemeProvider } from "@material-tailwind/react";
+import Logo from "../assets/logo.png";
+import Image from "next/image";
 
 type Props = {};
 
@@ -86,10 +88,11 @@ const Navbar = (props: Props) => {
               </li>
             </ul>
           </div>
+
           {/* search bar and hamburger */}
-          <div className="sub-nav lg:w-auto w-full flex gap-6 justify-between items-center">
+          <div className="sub-nav lg:w-auto w-full flex gap-12 justify-between items-center">
             {/* search */}
-            <form className="flex items-center max-w-sm llg:mx-auto">
+            <form className="flex items-center lg:max-w-auto max-w-[250px] lg:mx-auto">
               <label htmlFor="simple-search" className="sr-only">
                 Search
               </label>
@@ -107,19 +110,33 @@ const Navbar = (props: Props) => {
                   required
                 />
                 {isInputFocused && searchResults.length > 0 && (
-                  <Card className="w-full absolute focus:visible z-[10000]">
-                    <List>
+                  <Card
+                    className="w-full absolute focus:visible z-[10000]"
+                    placeholder={""}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
+                  >
+                    <List
+                      placeholder={undefined}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    >
                       {searchResults
                         .slice(0, 5)
                         .map((result: any, index: number) => (
-                          <ListItem key={index}>
-                            <Link
-                              href={result.link}
-                              onClick={() => setIsInputFocused(false)}
+                          <Link
+                            key={index}
+                            href={result.link}
+                            onClick={() => setIsInputFocused(false)}
+                          >
+                            <ListItem
+                              placeholder={undefined}
+                              onPointerEnterCapture={undefined}
+                              onPointerLeaveCapture={undefined}
                             >
                               {result.title}
-                            </Link>
-                          </ListItem>
+                            </ListItem>
+                          </Link>
                         ))}
                     </List>
                   </Card>
@@ -163,19 +180,17 @@ const Navbar = (props: Props) => {
             <div className="overlay fixed top-0 left-0 h-screen w-screen bg-black opacity-70 z-10"></div>
 
             {/* side menu */}
-            <div className="side-menu fixed top-0 right-0 h-screen w-[90%] max-w-[350px] z-20 bg-white">
+            <div className="side-menu fixed top-0 right-0 h-screen w-[90%] md:max-w-[300px] max-w-[250px] z-20 bg-white">
               {/* header */}
-              <div className="header bg-primary min-h-[70px] px-4 w-full flex items-center justify-between ">
-                <h2 className="text-white text-2xl">
+              <div className="header bg-secondary py-2 min-h-[70px] px-4 w-full flex items-center justify-between ">
+                <h2 className="text-white text-xl">
                   <Link href="/">
-                    {/* <Image src="/assets/zuventus.png" alt="Zuventus" height="60" width="130" />
-                     */}
-                    Company Logo
+                    <Image src={Logo} alt="Novotel" height="60" width="130" />
                   </Link>
                 </h2>
 
                 <button className="closs-menu" onClick={() => toggleMenu()}>
-                  <RxCross2 size={"30"} className="text-secondary" />
+                  <RxCross2 size={"36"} className="text-black" />
                 </button>
               </div>
 
@@ -183,32 +198,32 @@ const Navbar = (props: Props) => {
               <ul className="side-menu-nav flex flex-col w-full">
                 <Link
                   href="/products"
-                  className="text-lg"
+                  className="md:text-lg"
                   onClick={() => setShowMenu(false)}
                 >
-                  <li className="hover:bg-secondary p-4 flex items-center justify-between">
+                  <li className="hover:bg-tertiary p-4 flex items-center justify-between">
                     Products
-                    <GoArrowUpRight size={30} />
+                    <GoArrowUpRight size={20} />
                   </li>
                 </Link>
                 <Link
                   href={"/about"}
-                  className="text-lg"
+                  className="md:text-lg"
                   onClick={() => setShowMenu(false)}
                 >
-                  <li className="hover:bg-secondary p-4 flex items-center justify-between">
+                  <li className="hover:bg-tertiary p-4 flex items-center justify-between">
                     About us
-                    <GoArrowUpRight size={30} />
+                    <GoArrowUpRight size={20} />
                   </li>
                 </Link>
                 <Link
-                  href={"/about"}
-                  className="text-lg"
+                  href={"/contact"}
+                  className="md:text-lg"
                   onClick={() => setShowMenu(false)}
                 >
-                  <li className="hover:bg-secondary p-4 flex items-center justify-between">
+                  <li className="hover:bg-tertiary p-4 flex items-center justify-between">
                     Contact Us
-                    <GoArrowUpRight size={30} />
+                    <GoArrowUpRight size={20} />
                   </li>
                 </Link>
               </ul>

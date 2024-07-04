@@ -4,46 +4,49 @@ import React from "react";
 import { CiMail } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import Container from "./Container";
+import Logo from "../assets/logo.png";
 
 type Props = {};
 
 const MainHeader = (props: Props) => {
   return (
-    <header className="bg-primary text-white">
+    <header className="bg-tertiary text-black">
       <Container className="mx-auto h-100 py-2">
-        <div className="flex min-h-[50px] justify-between items-center h-100">
+        <div className="flex min-h-[50px] gap-6 justify-between items-center h-100">
           {/* Brand Logo */}
           <h1 className="text-lg">
             <Link href="/">
-              {/* <Image src="/assets/zuventus.png" alt="Zuventus" height="60" width="130" />
-               */}
-              Company Logo
+              <Image src={Logo} alt="Novotel" height="50" width="120" />
+              {/* Novotel Pharmaceutecals */}
             </Link>
           </h1>
 
           {/* Contact */}
-          <div className="flex flex-col sm:flex-row gap-x-4 md:items-center md:justify-center sm:justify-start">
+          <div className="flex flex-col md:text-base text-xs sm:flex-row gap-x-4 gap-y-2 md:items-center md:justify-center sm:justify-start">
             <div
               id="email"
-              className="flex items-start gap-2 pr-4 sm:border-r-2 border-black"
+              className="flex md:items-start items-center gap-1 pr-4 sm:border-r-2 border-black"
             >
               <div className="gmail-logo pt-1">
-                <CiMail className="h-4 md:h-8 w-auto text-secondary" />
+                <CiMail className="h-5 md:h-8 w-auto text-icons" />
               </div>
               <div className="flex flex-col">
                 <Link
-                  href={"mailto:enquiry@zuventus.com"}
+                  href={"mailto:novotelpharmapvtltd@gmail.com"}
                   className="email font-bold"
                 >
-                  enquiry@zuventus.com
+                  novotelpharmapvtltd@gmail.com
                 </Link>
                 <p className="md:block hidden">Email Us</p>
               </div>
             </div>
 
-            <div id="phone" className="flex items-start gap-2 border-black">
+            <div
+              id="phone"
+              className="flex md:items-start items-center gap-1 border-black"
+            >
               <div className="gmail-logo pt-1">
-                <FaPhoneAlt className="h-4 md:h-6 w-auto text-secondary" />
+                <FaPhoneAlt className=" h-4 md:h-6 w-auto text-icons" />
               </div>
               <div className="flex flex-col">
                 <Link href={"tel:919876543212"} className="email font-bold">

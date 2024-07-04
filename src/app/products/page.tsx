@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "@/components/PageHeader";
 // import Medicine from "../../assets/medicine.jpg";
 import Products from "../../assets/products.jpg";
 import { Product } from "@/types/product";
 import products from "../../data/products.json";
 import SearchFilter from "./SearchFilter";
 import ProductCard from "./ProductCard";
-import Container from "../components/Container";
+import Container from "@/components/Container";
 
 const Page = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -71,7 +71,7 @@ const Page = () => {
       </Container>
 
       <Container
-        className="product-grid grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center
+        className="product-grid px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center
       "
       >
         {filteredProducts.length > 0 ? (

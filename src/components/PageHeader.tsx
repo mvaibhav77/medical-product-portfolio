@@ -18,7 +18,7 @@ const PageHeader = (props: Props) => {
         height={"206"}
         width={"1000"}
         alt="About us"
-        className="w-full max-h-[210px] object-cover"
+        className="w-full md:h-[210px] h-[100px] object-cover"
       ></Image>
 
       {/* overlay */}

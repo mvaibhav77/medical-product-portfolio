@@ -24,7 +24,7 @@ const SearchFilter: React.FC<SearchFilterProps> = (props) => {
       <ThemeProvider>
         <div className="search-filter flex lg:flex-row flex-col items-center gap-6 justify-center lg:px-6 px-4">
           {/* search bar */}
-          <form className="relative w-full min-w-[350px] max-w-[450px]">
+          <form className="relative w-full min-w-[320px] md:max-w-[450px] max-w-[320px]">
             <label htmlFor="simple-search" className="sr-only">
               Search By Name
             </label>
@@ -52,9 +52,9 @@ const SearchFilter: React.FC<SearchFilterProps> = (props) => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                 />
               </svg>

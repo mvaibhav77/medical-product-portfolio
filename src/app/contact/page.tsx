@@ -1,8 +1,7 @@
 import React from "react";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "@/components/PageHeader";
 import Customer from "../../assets/customer.jpg";
-import Container from "../components/Container";
-import Image from "next/image";
+import Container from "@/components/Container";
 import Link from "next/link";
 
 type Props = {};
@@ -16,7 +15,7 @@ const page = (props: Props) => {
         id="about-main"
         className="py-8 lg:px-4 px-2 text-lg text-gray-800"
       >
-        <Container className="flex lg:flex-row flex-col gap-6 justify-center lg:items-start items-center lg:px-0 px-4">
+        <Container className="flex lg:flex-row flex-col gap-6 justify-center lg:items-start items-center  px-4">
           {/* section details */}
           <div className="section-details lg:w-3/5 w-full">
             {/* office address */}
@@ -28,9 +27,12 @@ const page = (props: Props) => {
               </div>
               <div className="info-body">
                 <p>
-                  Zuventus Healthcare Ltd. Zuventus House, Plot Y2, CTS No:
-                  358/A2, Near Nahur Railway Station, Nahur (West), Mumbai 400
-                  078
+                  <b>CIN</b>: U51397BR2020PTC049248
+                </p>
+                <p>
+                  SAVITA VERMA W/O SURENDRA PRASAD <br />
+                  103, Biscomaun Colony Rd, Gulzarbagh, Sadikpur, Patna, Bihar
+                  800007
                 </p>
               </div>
             </div>
@@ -43,9 +45,8 @@ const page = (props: Props) => {
               </div>
               <div className="info-body">
                 <p>
-                  Zuventus Healthcare Ltd. Zuventus House, Plot Y2, CTS No:
-                  358/A2, Near Nahur Railway Station, Nahur (West), Mumbai 400
-                  078
+                  NOVOTEL PHARMACEAUTECALS PVT LTD <br /> 103, Biscomaun Colony
+                  Rd, Gulzarbagh, Sadikpur, Patna, Bihar 800007
                 </p>
               </div>
             </div>
@@ -88,27 +89,27 @@ const page = (props: Props) => {
                     href="mailto:enquiry@zuventus.com"
                     className="text-primary underline"
                   >
-                    enquiry@zuventus.com
+                    novotelpharmapvtltd@gmail.com
                   </Link>
                 </p>
               </div>
             </div>
           </div>
 
-          {/* section image */}
-          <div className="section-image w-full max-w-[500px] aspect-square overflow-x-hidden">
+          {/* section map */}
+          <div className="section-image w-full max-w-[600px] xl:aspect-[4/3] aspect-square overflow-x-hidden">
             <iframe
               width="100%"
               height="100%"
               loading="lazy"
-              src={`https://www.google.com/maps/embed/v1/place?q=Zuventus%20House%2C%20Plot%20Y2%2C%20CTS%20No%3A%20358%2FA2%2C%20Near%20Nahur%20Railway%20Station%2C%20Nahur%20(West)%2C%20Mumbai%20400%20078&key=${process.env.NEXT_MAP_API}&zoom=11`}
+              src={`https://www.google.com/maps/embed/v1/place?q=NOVOTEL%20PHARMACEAUTECALS%20103%2C%20BISCOMAN%20COLONY%2C%20GULZARBAGH%2C%20GAIGHA%20T%20%2C%20PATNA%2C%20Bihar%2C%20India%20-%20800007&key=${process.env.NEXT_MAP_API}&zoom=11`}
             ></iframe>
           </div>
         </Container>
 
         {/* Info Cards */}
         <Container className="flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-6 my-6 mt-12">
-          <div className="box1 flex flex-col gap-2 items-center bg-red-500 text-white p-6">
+          <div className="box1 flex flex-col gap-2 items-center bg-icons text-white p-6">
             <div className="box-header">
               <h4 className="text-lg font-semibold">
                 Product Related Complaints
@@ -116,13 +117,16 @@ const page = (props: Props) => {
             </div>
 
             <div className="box-body">
-              <Link href={"mailto:camplaints@xyz.com"} className="underline">
-                complaint@xyz.com
+              <Link
+                href={"mailto:novotelpharmapvtltd@gmail.com"}
+                className="underline"
+              >
+                novotelpharmapvtltd@gmail.com
               </Link>
             </div>
           </div>
 
-          <div className="box1 flex flex-col gap-2 items-center bg-red-500 text-white p-6">
+          <div className="box1 flex flex-col gap-2 items-center bg-icons text-white p-6">
             <div className="box-header">
               <h4 className="text-lg font-semibold">
                 Product Related Complaints
@@ -130,13 +134,16 @@ const page = (props: Props) => {
             </div>
 
             <div className="box-body">
-              <Link href={"mailto:camplaints@xyz.com"} className="underline">
-                complaint@xyz.com
+              <Link
+                href={"mailto:novotelpharmapvtltd@gmail.com"}
+                className="underline"
+              >
+                novotelpharmapvtltd@gmail.com
               </Link>
             </div>
           </div>
 
-          <div className="box1 flex flex-col gap-2 items-center bg-red-500 text-white p-6">
+          <div className="box1 flex flex-col gap-2 items-center bg-icons text-white p-6">
             <div className="box-header">
               <h4 className="text-lg font-semibold">
                 Product Related Complaints
@@ -144,8 +151,11 @@ const page = (props: Props) => {
             </div>
 
             <div className="box-body">
-              <Link href={"mailto:camplaints@xyz.com"} className="underline">
-                complaint@xyz.com
+              <Link
+                href={"mailto:novotelpharmapvtltd@gmail.com"}
+                className="underline"
+              >
+                novotelpharmapvtltd@gmail.com{" "}
               </Link>
             </div>
           </div>

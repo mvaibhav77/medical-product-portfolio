@@ -9,47 +9,50 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-primary text-lg">
+    <footer className="bg-primary md:text-lg">
       {/* contact info card */}
       <Container className="info-cards text-white p-4 flex flex-col lg:flex-row gap-6 justify-strech lg:items-center">
         <div
           id="address"
-          className="flex items-start w-full lg:w-3/5 lg:min-w-[50%] gap-2 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
+          className="flex items-start w-full lg:w-3/5 lg:min-w-[50%] md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
         >
           <div className="adddress-logo pt-1">
-            <FaLocationDot className="h-4 md:h-8 w-auto text-secondary" />
+            <FaLocationDot className="h-8 w-auto text-icons" />
           </div>
 
           <div className="flex flex-col">
             <p className="font-bold ">Address</p>
 
             <p>
-              Bukhara at ITC MAURYA, Sardar Patel Marg, Akhaura Block,
-              Diplomatic Enclave, Chanakyapuri, New Delhi, Delhi 110021, India
+              SAVITA VERMA W/O SURENDRA PRASAD 103, BISCOMAN COLONY, GULZARBAGH,
+              GAIGHA T , PATNA, Bihar, India - 800007
             </p>
           </div>
         </div>
         <div
           id="email"
-          className="flex items-start w-full gap-2 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
+          className="flex items-start w-full md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
         >
           <div className="gmail-logo pt-1 self-start">
-            <CiMail className="h-4 md:h-8 w-auto text-secondary" />
+            <CiMail className="h-8 w-auto text-icons" />
           </div>
           <div className="flex flex-col">
             <p className="font-bold ">Email Us</p>
 
-            <Link href={"mailto:enquiry@zuventus.com"} className="email">
-              enquiry@zuventus.com
+            <Link
+              href={"mailto:novotelpharmapvtltd@gmail.com"}
+              className="email"
+            >
+              novotelpharmapvtltd@gmail.com
             </Link>
           </div>
         </div>
         <div
           id="phone"
-          className="flex items-start w-full gap-2 border-black lg:h-[90px] "
+          className="flex items-start w-full md:gap-2 gap-4 border-black lg:h-[90px] "
         >
           <div className="phone-logo pt-1 ">
-            <FaPhoneAlt className="h-4 md:h-6 w-auto text-secondary" />
+            <FaPhoneAlt className="h-6 w-auto text-icons" />
           </div>
           <div className="flex flex-col">
             <p className="font-bold">Call us on</p>
@@ -64,9 +67,10 @@ const Footer = (props: Props) => {
       </Container>
 
       {/* copyright */}
-      <section className="w-full bg-secondary text-center text-lg p-4 tracking-wider">
+      <section className="w-full bg-secondary text-center md:text-lg p-4 tracking-wider">
         <p>
-          &copy; <span className="text-primary">Company Name</span>, 2024
+          &copy; <span className="text-primary">Novotel Pharmaceuticals</span>,
+          2024
         </p>
       </section>
     </footer>
