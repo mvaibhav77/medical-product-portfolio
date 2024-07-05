@@ -66,11 +66,11 @@ const Navbar = (props: Props) => {
 
   return (
     <ThemeProvider>
-      <nav className="w-100 py-2 bg-secondary">
+      <nav className="w-100 py-1 ">
         <Container className="flex justify-between items-center">
           {/* big menu */}
           <div className="main-nav lg:block hidden">
-            <ul className="flex gap-10 text-[16px] font-semibold">
+            <ul className="flex gap-10 text-[15px] font-semibold">
               <li>
                 <Link href="/products" className="hover:underline">
                   Products
@@ -177,10 +177,10 @@ const Navbar = (props: Props) => {
         {showMenu && (
           <>
             {/* overlay */}
-            <div className="overlay fixed top-0 left-0 h-screen w-screen bg-black opacity-70 z-10"></div>
+            <div className="overlay fixed top-0 left-0 h-screen w-screen bg-black opacity-70 z-[99]"></div>
 
             {/* side menu */}
-            <div className="side-menu fixed top-0 right-0 h-screen w-[90%] md:max-w-[300px] max-w-[250px] z-20 bg-white">
+            <div className="side-menu fixed top-0 right-0 h-screen w-[90%] md:max-w-[300px] max-w-[250px] z-[100] bg-white">
               {/* header */}
               <div className="header bg-secondary py-2 min-h-[70px] px-4 w-full flex items-center justify-between ">
                 <h2 className="text-white text-xl">

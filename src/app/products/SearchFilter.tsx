@@ -84,7 +84,7 @@ const SearchFilter: React.FC<SearchFilterProps> = (props) => {
           </select> */}
           <div className="select-category w-full lg:max-w-[350px] max-w-[450px]">
             <Select
-              color="red"
+              color="green"
               label="Select Category"
               variant="outlined"
               size="lg"

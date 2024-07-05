@@ -8,8 +8,8 @@
   --background-end-rgb: 255, 255, 255;
   --secondary-color: #d9e7c8;
   --primary-color: #5a8d16;
-  --tertiary-color: #b4e955;
-  --icons-color: #fc3c3c;
+  --tertiary-color: #ffe0bf;
+  --icons-color: #ff0101;
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -1,11 +1,124 @@
+import Container from "@/components/Container";
+import MainCarousel from "@/components/MainCarousel";
 import Image from "next/image";
+import Customer from "@/assets/customer.jpg";
+import Product from "@/assets/products.jpg";
+import Mission from "@/assets/mission.jpg";
+import Teamwork from "@/assets/teamwork.jpg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-[60vh] flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold text-center">
-        Welcome to the Medical Product Company
-      </h1>
+    <main className="flex flex-col items-center justify-between">
+      <section>
+        {/* Main company carousel */}
+        <MainCarousel images={[Customer, Product]} />
+        {/* about section */}
+
+        <div>
+          <section id="about-main" className="py-8">
+            <Container className="flex lg:flex-row lg:px-4 px-2 flex-col-reverse gap-6 justify-center lg:items-start items-center ">
+              {/* section deatils */}
+              <div className="section-details lg:w-3/5 w-full">
+                <div className="section-header">
+                  <h4 className="text-lg font-semibold text-primary">
+                    About Us
+                  </h4>
+                  <h3 className="text-3xl font-semibold">
+                    Lorem ipsum dolor sit amet.
+                  </h3>
+                </div>
+
+                <div className="section-body py-6 tracking-wide	   text-lg flex flex-col gap-4">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus vero sequi aut perspiciatis libero! Doloremque quos
+                    soluta obcaecati distinctio neque, dolor recusandae corrupti
+                    labore nulla odit illo dolores enim vitae debitis pariatur
+                    vero culpa ut earum, mollitia, accusamus nemo asperiores.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias obcaecati cumque veniam voluptatum adipisci,
+                    magnam, sit minima quam provident exercitationem illum
+                    vitae, voluptatibus at reprehenderit eius amet nobis dolores
+                    unde.
+                  </p>
+                  <p>
+                    Ullam, ab provident. Vitae hic odit cum quis voluptatum
+                    expedita unde itaque sit at, molestias dolore minus, autem
+                    accusantium blanditiis ab voluptates. Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Itaque libero sint vel
+                    fugiat!
+                  </p>
+                </div>
+              </div>
+
+              {/* section image */}
+              <div className="section-image lg:w-auto w-full">
+                <Image
+                  src={Mission}
+                  alt="Company Image"
+                  width={1000}
+                  height={1000}
+                  className="lg:w-auto w-full h-[25vw] object-cover"
+                />
+              </div>
+            </Container>
+          </section>
+
+          {/* sections 2 */}
+          <section id="about-footer" className="py-8 bg-secondary">
+            <Container className="flex lg:flex-row flex-col gap-12 justify-center lg:px-0 px-4">
+              {/* section image */}
+              <div className="section-image lg:w-2/5 w-full">
+                <Image
+                  src={Teamwork}
+                  alt="Company Image"
+                  width={1000}
+                  height={1000}
+                  className="lg:w-auto w-full h-[25vw] object-cover"
+                />
+              </div>
+
+              {/* section details */}
+              <div className="section-details lg:w-3/5 w-100">
+                <div className="section-header">
+                  <h4 className="text-lg font-semibold text-primary">
+                    Our Teamwork
+                  </h4>
+                  <h3 className="text-3xl font-semibold">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </h3>
+                </div>
+
+                <div className="section-body py-6 tracking-wide	   text-lg flex flex-col gap-4">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus vero sequi aut perspiciatis libero! Doloremque quos
+                    soluta obcaecati distinctio neque, dolor recusandae corrupti
+                    labore nulla odit illo dolores enim vitae debitis pariatur
+                    vero culpa ut earum, mollitia, accusamus nemo asperiores.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestias obcaecati cumque veniam voluptatum adipisci,
+                    magnam, sit minima quam provident exercitationem illum
+                    vitae, voluptatibus at reprehenderit eius amet nobis dolores
+                    unde.
+                  </p>
+                  <p>
+                    Ullam, ab provident. Vitae hic odit cum quis voluptatum
+                    expedita unde itaque sit at, molestias dolore minus, autem
+                    accusantium blanditiis ab voluptates. Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Itaque libero sint vel
+                    fugiat!
+                  </p>
+                </div>
+              </div>
+            </Container>
+          </section>
+        </div>
+      </section>
     </main>
   );
 }

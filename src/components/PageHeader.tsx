@@ -15,10 +15,10 @@ const PageHeader = (props: Props) => {
         // src={"/assets/about-us.jpg"}
         src={props.image}
         // placeholder h and w
-        height={"206"}
-        width={"1000"}
+        height={"2006"}
+        width={"2000"}
         alt="About us"
-        className="w-full md:h-[210px] h-[100px] object-cover"
+        className="w-full md:h-[210px] h-[100px] object-cover "
       ></Image>
 
       {/* overlay */}

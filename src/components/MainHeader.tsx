@@ -16,7 +16,13 @@ const MainHeader = (props: Props) => {
           {/* Brand Logo */}
           <h1 className="text-lg">
             <Link href="/">
-              <Image src={Logo} alt="Novotel" height="50" width="120" />
+              <Image
+                src={Logo}
+                alt="Novotel"
+                height="1000"
+                width="1000"
+                className="w-[120px]"
+              />
               {/* Novotel Pharmaceutecals */}
             </Link>
           </h1>

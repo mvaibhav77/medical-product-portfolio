@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
       <Container className="info-cards text-white p-4 flex flex-col lg:flex-row gap-6 justify-strech lg:items-center">
         <div
           id="address"
-          className="flex items-start w-full lg:w-3/5 lg:min-w-[50%] md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
+          className="flex items-start px-2 w-full lg:w-3/5 lg:min-w-[50%] md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
         >
           <div className="adddress-logo pt-1">
             <FaLocationDot className="h-8 w-auto text-icons" />
@@ -31,7 +31,7 @@ const Footer = (props: Props) => {
         </div>
         <div
           id="email"
-          className="flex items-start w-full md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
+          className="flex items-start w-full px-2 md:gap-2 gap-4 pr-4 lg:border-r-2 lg:border-b-0 border-b-2 border-gray-300 lg:pb-2 pb-4 lg:h-[90px]"
         >
           <div className="gmail-logo pt-1 self-start">
             <CiMail className="h-8 w-auto text-icons" />
@@ -49,7 +49,7 @@ const Footer = (props: Props) => {
         </div>
         <div
           id="phone"
-          className="flex items-start w-full md:gap-2 gap-4 border-black lg:h-[90px] "
+          className="flex items-start px-2 w-full md:gap-2 gap-4 border-black lg:h-[90px] "
         >
           <div className="phone-logo pt-1 ">
             <FaPhoneAlt className="h-6 w-auto text-icons" />
